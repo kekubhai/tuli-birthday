@@ -105,7 +105,7 @@ import { SparklesCore } from './components/ui/Sparkles'
 import MemoryLane from './components/TimelineofUs'
 
 import SpecialMoments from './components/SpecialEffects'
-import SendWishes from './components/ui/SendWishes'
+import SendWishes from './components/SendWishes'
 
 const page = () => {
   return (
