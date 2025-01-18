@@ -1,57 +1,38 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
+import { ImagesSlider } from "@/components/ui/images-slider";
 
-const WishesPage: React.FC = () => {
+export function ImagesSliderDemo() {
+  const images = [
+    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ];
   return (
-    <div className="relative bg-white min-h-screen p-8">
-      {/* Navbar */}
-      <header className="flex items-center justify-between mb-12">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">Love Memories</h1>
-          <p className="text-sm text-gray-500 italic">my girlfriend</p>
-        </div>
-        <button className="p-2 text-gray-600">
-          <span className="material-icons">menu</span>
+    <ImagesSlider className="h-[40rem]" images={images}>
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -80,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="z-50 flex flex-col justify-center items-center"
+      >
+        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+        Hello <br /> nobody asked for
+        </motion.p>
+        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <span>Join now →</span>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>
-      </header>
-
-      {/* Spread the Love */}
-      <div className="text-center mb-12 relative inline-block">
-        <div className="absolute -inset-2 bg-yellow-300 rounded-lg -rotate-2 shadow-lg z-0"></div>
-        <h2 className="relative z-10 text-lg font-bold text-gray-900 bg-yellow-300 px-6 py-2 inline-block rounded-md shadow-sm transform -rotate-2">
-          Spread the Love
-        </h2>
-      </div>
-
-      {/* Wishes */}
-      <main className="text-center">
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-4">
-          Wishes for Mia
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Leave your heartfelt messages and wishes for Mia below!
-        </p>
-
-        {/* Wishes Section */}
-        <div className="grid sm:grid-cols-2 gap-6 text-left max-w-3xl mx-auto mb-8">
-          <ul className="space-y-2 list-disc list-inside text-gray-700">
-            <li>Happy Birthday, Mia! You are amazing!</li>
-            <li>Cheers to another wonderful year!</li>
-          </ul>
-          <ul className="space-y-2 list-disc list-inside text-gray-700">
-            <li>Wishing you all the love and joy!</li>
-            <li>Keep shining bright, beautiful!</li>
-          </ul>
-        </div>
-
-       
-        <div>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition duration-300">
-            Send Wishes
-          </button>
-        </div>
-      </main>
-    </div>
+      </motion.div>
+    </ImagesSlider>
   );
-};
-
-export default WishesPage;
+}
