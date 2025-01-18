@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import confetti from 'canvas-confetti'
+import { ShimmerButton } from '@/components/ui/shimmer-button'
 
 export default function ConfettiButton() {
   const [isAnimating, setIsAnimating] = useState(false)
@@ -17,13 +18,15 @@ export default function ConfettiButton() {
   }
 
   return (
-    <button
+    <div className="flex items-center justify-center ">
+    <ShimmerButton
       onClick={handleClick}
-      className={`bg-yellow-400 hover:bg-yellow-500 text-purple-800 font-bold py-2 px-4 rounded-full text-xl transition duration-300 ease-in-out transform hover:scale-105 ${isAnimating ? 'animate-bounce' : ''}`}
+      className="align-middle justify-center"
       disabled={isAnimating}
     >
       Celebrate!
-    </button>
+    </ShimmerButton>
+  </div>
   )
 }
 
