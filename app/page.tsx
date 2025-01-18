@@ -96,6 +96,7 @@
 //     </div>
 //   )
 // }
+import Notice from './components/Notice'
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity'
 import Image from 'next/image'
 import React from 'react'
@@ -108,6 +109,8 @@ import SpecialMoments from './components/SpecialEffects'
 import { ImagesSlider } from '@/components/ui/images-slider'
 import { AppleCardsCarouselDemo } from './components/Applecards'
 import FaqPage from './components/faq'
+import MemoriesPage from './components/MemoriesPage'
+
 
 const page = () => {
   const images = [
@@ -185,6 +188,12 @@ const page = () => {
   <div className="h-full">
     <FaqPage />
   </div>
+  <div className='h-full'>
+<MemoriesPage/>
+</div>
+<div>
+  
+</div>
 </div>
 
     </div>
