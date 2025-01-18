@@ -110,6 +110,9 @@ import { ImagesSlider } from '@/components/ui/images-slider'
 import { AppleCardsCarouselDemo } from './components/Applecards'
 import FaqPage from './components/faq'
 import MemoriesPage from './components/MemoriesPage'
+import CelebrationPage from './components/celebrateTogether'
+import AboutPage from './components/AboutHer'
+import Gift from './components/Gift'
 
 
 const page = () => {
@@ -192,8 +195,14 @@ const page = () => {
 <MemoriesPage/>
 </div>
 <div>
-  
+  <CelebrationPage/>
 </div>
+<div>
+  <AboutPage/>
+  </div>.
+  <div>
+    <Gift/>
+  </div>
 </div>
 
     </div>
