@@ -21,7 +21,7 @@ export const SparklesCore = ({
   background = "transparent",
   minSize = 0.6,
   maxSize = 1.4,
-  particleDensity = 100,
+  
   particleColor = "#ffffff"
 }: SparklesProps) => {
   const [init, setInit] = useState(false)
@@ -67,7 +67,7 @@ export const SparklesCore = ({
             number: {
               density: {
                 enable: true,
-                area: particleDensity,
+             
               },
               value: 100,
             },

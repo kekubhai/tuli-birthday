@@ -8,7 +8,7 @@ export default function Navigation() {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Image
-            src="/placeholder.svg"
+            src="/"
             alt="Love"
             width={32}
             height={32}

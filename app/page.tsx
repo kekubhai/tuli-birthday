@@ -1,5 +1,5 @@
 /* eslint-disable react/no-children-prop */
-/* eslint-disable jsx-a11y/alt-text */
+
 // 'use client'
 
 // import { useEffect, useRef } from 'react'
@@ -96,7 +96,6 @@
 //     </div>
 //   )
 // }
-import Notice from './components/Notice'
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity'
 import Image from 'next/image'
 import React from 'react'
