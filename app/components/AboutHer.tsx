@@ -8,10 +8,10 @@ export default function AboutPage() {
     <main className="min-h-screen bg-[#FFD700] p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Profile Image */}
+      
           <div className="relative flex justify-center">
             <CircleImage
-              imageUrl="/part1.png"
+              imageUrl="/store/mayapur1.jpg"
               name="Emily Smith"
               title="Creative Soul"
               subtitle="The love of my life!"

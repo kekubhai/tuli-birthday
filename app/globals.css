@@ -87,3 +87,102 @@ body {
   }
 }
 
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Animation for Floating */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-delayed {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+/* Floating Animation for Balloons */
+.balloon-container {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 5s ease-in-out infinite;
+}
+
+/* Gradient Background */
+
+
+/* Balloon Styling */
+.balloon {
+  width: 50px; /* Adjusted to decrease the size */
+  height: 70px; /* Adjusted for proportionate balloon size */
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  transform: translateX(-50%);
+}
+
+.balloon.yellow {
+  background: yellow;
+}
+
+.balloon.purple {
+  background: purple;
+}
+
+/* Adjusted keyframes for smoother floating animations */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-delayed {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

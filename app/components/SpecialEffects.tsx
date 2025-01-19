@@ -63,9 +63,9 @@ export default function SpecialMoments() {
 
         <BackgroundGradient className="rounded-[22px] max-w-full overflow-hidden bg-blue-400">
           <div className="grid lg:grid-cols-2 gap-8 p-8">
-            <div className="relative h-[400px] w-full">
+            <div className="object-cover relative h-[400px] w-full">
               <Image
-                src="/globe.svg"
+                src="/store/amra2.jpg"
                 alt="Sunset moment"
                 fill
                 className="object-cover rounded-lg transform rotate-2 shadow-xl"

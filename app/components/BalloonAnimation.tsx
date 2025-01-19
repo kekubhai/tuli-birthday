@@ -1,41 +1,72 @@
-'use client'
+import React from "react";
 
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
+const BalloonAnimation: React.FC = () => {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-sky-300 to-blue-500 flex items-center justify-center">
+      <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+        {/* Balloon 1 */}
+        <div className="balloon-container animate-float">
+          <svg
+            className="balloon"
+            width="100"
+            height="150"
+            viewBox="0 0 100 150"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Balloon */}
+            <ellipse
+              cx="50"
+              cy="50"
+              rx="45"
+              ry="60"
+              fill="#FF6F91"
+              className="shadow-lg"
+            />
+            {/* Balloon highlight */}
+            <ellipse cx="35" cy="35" rx="10" ry="15" fill="white" opacity="0.4" />
+            {/* String */}
+            <line
+              x1="50"
+              y1="110"
+              x2="50"
+              y2="150"
+              stroke="white"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
 
-const colors = ['#FF69B4', '#FF1493', '#FFB6C1', '#FFC0CB', '#FF69B4']
+        {/* Balloon 2 */}
+        <div className="balloon-container animate-float-delayed">
+          <svg
+            className="balloon"
+            width="100"
+            height="150"
+            viewBox="0 0 100 150"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              cx="50"
+              cy="50"
+              rx="45"
+              ry="60"
+              fill="#6FA8FF"
+              className="shadow-lg"
+            />
+            <ellipse cx="35" cy="35" rx="10" ry="15" fill="white" opacity="0.4" />
+            <line
+              x1="50"
+              y1="110"
+              x2="50"
+              y2="150"
+              stroke="white"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+  );
+};
 
-export default function BalloonAnimation() {
-  const containerRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!containerRef.current) return
-
-    const createBalloon = () => {
-      const balloon = document.createElement('div')
-      balloon.className = 'absolute w-16 h-20 rounded-full'
-      balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
-      balloon.style.bottom = '-80px'
-      balloon.style.left = `${Math.random() * 100}%`
-      containerRef.current?.appendChild(balloon)
-
-      gsap.to(balloon, {
-        y: -window.innerHeight - 100,
-        duration: 10 + Math.random() * 5,
-        ease: 'power1.inOut',
-        onComplete: () => {
-          if (containerRef.current?.contains(balloon)) {
-            containerRef.current.removeChild(balloon)
-          }
-        }
-      })
-    }
-
-    const interval = setInterval(createBalloon, 2000)
-
-    return () => clearInterval(interval)
-  }, [])
-
-  return <div ref={containerRef} className="fixed inset-0 pointer-events-none" />
-}
-
+export default BalloonAnimation;

@@ -7,7 +7,7 @@ export default function MemoriesPage() {
       id: "first-date",
       title: "First Date",
       description: "Our first date was a whirlwind of laughter and awkward moments. Who knew love could be so hilarious?",
-      image: "/placeholder.svg?height=600&width=800"
+      image: "/store/amra2.jpg"
     },
     {
       id: "adventurous-trips",

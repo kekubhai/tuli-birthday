@@ -53,38 +53,38 @@ const data = [
   {
     category: "Artificial Intelligence",
     title: "You can do more with AI.",
-    src: "/file.svg",
+    src: "/store/lukiye-jaowa.jpg",
     content: <DummyContent />,
   },
   {
     category: "Productivity",
     title: "Enhance your productivity.",
-    src: "/file.svg",
+    src: "/store/pujo1.jpg",
     content: <DummyContent />,
   },
   {
     category: "Product",
     title: "Launching the new Apple Vision Pro.",
-    src: "/file.svg",
+    src: "/store/sundori.jpg",
     content: <DummyContent />,
   },
 
   {
     category: "Product",
     title: "Maps for your iPhone 15 Pro Max.",
-    src: "/file.svg",
+    src: "/store/trial1.jpg",
     content: <DummyContent />,
   },
   {
     category: "iOS",
     title: "Photography just got better.",
-    src: "/file.svg",
+    src: "/store/amra2.jpg",
     content: <DummyContent />,
   },
   {
     category: "Hiring",
     title: "Hiring for a Staff Software Engineer",
-    src:"/file.svg",
+    src:"/store/sundori.jpg",
     content: <DummyContent />,
   },
 ];

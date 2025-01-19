@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { TextGenerateEffect } from "./ui/text-generate-effect"
-import { CardHoverEffect } from "./ui/card-hover-effect"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { CardHoverEffect } from "./ui/card-hover-effect";
+import Image from "next/image";
 
 export default function MemoryLane() {
   return (
@@ -29,36 +29,40 @@ export default function MemoryLane() {
           </div>
 
           {/* Right Column */}
-          <div className="relative"
-  style={{
-    backgroundImage: "/store/ami1.jpg'",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-  <CardHoverEffect className=" p-8 rounded-3xl shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)]">
-    <div className="flex flex-col items-center space-y-6">
-      <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-lg transform">
-        <Image
-          src="/store/phone-ghatche.jpg"
-          alt="Memory photo"
-          fill
-          className="object-cover"
-        />
-      </div>
-      <h2 className="text-2xl text-white font-serif">That&apos;s when I knew</h2>
-      <h3 className="text-1xl text-white font-serif">She is the One</h3>
-      <Button className="bg-[#003366] hover:bg-[#002244] text-white px-8 py-6 text-lg rounded-lg">
-        See More
-      </Button>
-    </div>
-  </CardHoverEffect>
-</div>
-
+          <div
+            className="relative p-8 rounded-3xl shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)]"
+            style={{
+              backgroundImage: "url('/store/ami1.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <CardHoverEffect>
+              <div className="flex flex-col items-center space-y-6">
+                <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-lg transform">
+                  <Image
+                    src="/store/phone-ghatche.jpg"
+                    alt="Memory photo"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h2 className="text-2xl text-white font-serif">
+                  That&apos;s when I knew
+                </h2>
+                <h3 className="text-1xl text-white font-serif">
+                  She is the One
+                </h3>
+                <Button className="bg-[#003366] hover:bg-[#002244] text-white px-8 py-6 text-lg rounded-lg">
+                  See More
+                </Button>
+              </div>
+            </CardHoverEffect>
+          </div>
         </div>
       </div>
     </main>
-  )
+  );
 }
 
