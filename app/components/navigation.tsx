@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 export default function Navigation() {
@@ -8,7 +7,7 @@ export default function Navigation() {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Image
-            src="/"
+            src="/logo1.jpg"
             alt="Love"
             width={32}
             height={32}
@@ -28,10 +27,6 @@ export default function Navigation() {
             Wish Her Well
           </Link>
         </div>
-
-        <Button className="bg-[#FFD700] text-black hover:bg-[#FFD700]/90">
-          Join Us
-        </Button>
       </div>
     </nav>
   )

@@ -156,7 +156,7 @@ const page = () => {
         <div className="relative">
           <Image
             className="object-cover bg-center min-h-[400px] lg:min-h-full"
-            src='/part1.png'
+            src='/store/nauka1.jpg'
             width={1000}
             height={1000}
             alt='hello'
@@ -177,7 +177,7 @@ const page = () => {
         <VelocityScroll>Hello</VelocityScroll>
       </div>
       
-      {/* Birthday Landing Page */}
+    
       <div>
         <BirthdayLandingPage /> 
       </div>

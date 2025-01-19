@@ -38,25 +38,29 @@ export default function SpecialMoments() {
 
         {/* Laughter Section */}
         <BackgroundGradient className="rounded-[22px] max-w-full overflow-hidden bg-[#FF5733]">
-          <div className="grid lg:grid-cols-2 gap-8 p-8">
-            <div className="relative h-[400px] w-full">
-              <Image
-                src="/globe.svg"
-                alt="Sunset moment"
-                fill
-                className="object-cover rounded-lg transform rotate-2 shadow-xl"
-              />
-            </div>
-            <div className="flex flex-col justify-center space-y-6 text-white">
-              <span className="text-7xl font-light">1</span>
-              <h2 className="text-6xl font-bold">Laughter</h2>
-              <TextGenerateEffect
-                words="From silly jokes to spontaneous dance-offs, our love is filled with laughter that echoes through time."
-                className="text-xl"
-              />
-            </div>
-          </div>
-        </BackgroundGradient>
+  <div className="grid lg:grid-cols-2 gap-8 p-8">
+    <div className="relative h-[400px] w-full">
+    <div className="flex flex-col items-center space-y-6">
+      <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-lg transform">
+        <Image
+          src="/store/lift-e-sathe.jpg"
+          alt="Memory photo"
+          fill
+          className="object-cover"
+        />
+      </div>
+      </div>
+    </div>
+    <div className="flex flex-col justify-center space-y-6 text-white">
+      <h2 className="text-6xl font-bold">Together</h2>
+      <TextGenerateEffect
+        words="Sticking together in highs and lows"
+        className="text-xl"
+      />
+    </div>
+  </div>
+</BackgroundGradient>
+
         <BackgroundGradient className="rounded-[22px] max-w-full overflow-hidden bg-blue-400">
           <div className="grid lg:grid-cols-2 gap-8 p-8">
             <div className="relative h-[400px] w-full">
@@ -68,7 +72,7 @@ export default function SpecialMoments() {
               />
             </div>
             <div className="flex flex-col justify-center space-y-6 text-white">
-              <span className="text-7xl font-light">1</span>
+             
               <h2 className="text-6xl font-bold">Laughter</h2>
               <TextGenerateEffect
                 words="From silly jokes to spontaneous dance-offs, our love is filled with laughter that echoes through time."
