@@ -1,4 +1,4 @@
-/* eslint-disable react/no-children-prop */
+
 import RightImageHolder from "./ui/Imageholder";
 
 export default function Gift() {

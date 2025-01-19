@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Cake3D from './Cake3D'
 import ConfettiButton from './ConfettiButton'
-import Reactbaloons from './ui/react-balloon'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -62,7 +62,7 @@ export default function BirthdayLandingPage() {
         <section className="mb-16 text-center">
           <Cake3D />
           <ConfettiButton />
-          <Reactbaloons/>
+       
         </section>
       </main>
     </div>

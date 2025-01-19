@@ -1,5 +1,4 @@
 /* eslint-disable react/no-children-prop */
-
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity'
 import Image from 'next/image'
 import React from 'react'
@@ -114,6 +113,10 @@ const page = () => {
         </div>
         
         <div>
+        <div className="App">
+    
+  
+  </div>
           <Gift />
         </div>
         

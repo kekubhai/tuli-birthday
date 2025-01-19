@@ -43,20 +43,20 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
+    category: "",
+    title: "",
     src: "/store/lukiye-jaowa.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
+    category: "",
+    title: ".",
     src: "/store/pujo1.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
+    category: "",
+    title: "",
     src: "/store/sundori.jpg",
     content: <DummyContent />,
   },
