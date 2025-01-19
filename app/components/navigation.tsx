@@ -28,7 +28,7 @@ export default function Navigation() {
               height={40}
               className="rounded-full border-2 border-white"
             />
-            <span className="text-2xl font-bold italic">Tuli&apos;s Birthday</span>
+            <span className="text-2xl font-bold italic">Her Birthday</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
