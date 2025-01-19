@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity'
 import Image from 'next/image'
@@ -16,6 +17,7 @@ import CelebrationPage from './components/celebrateTogether'
 import AboutPage from './components/AboutHer'
 import Gift from './components/Gift'
 import BirthdayLandingPage from './components/celebration'
+import MyLetter from './components/myLetter'
 
 const page = () => {
   const images = [
@@ -104,7 +106,9 @@ const page = () => {
         <div className="h-full">
           <MemoriesPage />
         </div>
-        
+        <div>
+          <MyLetter/>
+        </div>
         <div>
           <CelebrationPage />
         </div>

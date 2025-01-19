@@ -10,22 +10,22 @@ export default function MemoriesPage() {
       image: "/store/amra2.jpg"
     },
     {
-      id: "adventurous-trips",
-      title: "Adventurous Trips",
-      description: "From spontaneous road trips to planned getaways, every journey becomes an adventure with you.",
-      image: "/placeholder.svg?height=600&width=800"
+      id: "Our Pujo Date",
+      title: "Our first Saraswati Pujo",
+      description: "Hehe this was cute, This was we praying for our better future",
+      image: "/store/our-saraswatipujo.jpg"
     },
     {
-      id: "sweet-surprises",
-      title: "Sweet Surprises",
+      id: "The first Durga Pujo Together",
+      title: "Durga Pujo together",
       description: "Little notes, unexpected gifts, and surprise visits - you make every day special in your own way.",
-      image: "/placeholder.svg?height=600&width=800"
+      image: "/store/1stpujo.jpg"
     },
     {
-      id: "everyday-joys",
-      title: "Everyday Joys",
-      description: "Coffee mornings, evening walks, and quiet moments together - finding magic in the ordinary.",
-      image: "/placeholder.svg?height=600&width=800"
+      id: "Cinema Dates",
+      title: "Cinema Date",
+      description: "She is the reason I could be a cinephile again ,Watch FDFS and gawd I can't tell you how pumped I was watching the climax of Kalki ",
+      image: "/store/movie-date.jpg"
     }
   ]
 
@@ -42,7 +42,7 @@ export default function MemoriesPage() {
               <TabsTrigger
                 key={memory.id}
                 value={memory.id}
-                className="rounded-full px-6 py-2 data-[state=active]:bg-[#FF5733] data-[state=active]:text-white transition-all"
+                className="rounded-full object-top px-6 py-2 data-[state=active]:bg-[#FF5733] data-[state=active]:text-white transition-all"
               >
                 {memory.title}
               </TabsTrigger>

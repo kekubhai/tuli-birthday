@@ -11,19 +11,16 @@ import {
       },
       {
         question: "How can I contribute?",
-        answer: "You can contribute by sharing your favorite memories, photos, or messages. Simply use the 'Share Memory' button in the gallery section or leave your wishes in our guestbook."
+        answer: "You can create pray for the well-being of this couple and wish my queen on this date."
+      },
+     
+      {
+       question:"Was this necessary?",
+       answer:" Been grinding too much on dev and not yet skillful to build other cute stuffs"
       },
       {
-        question: "Can I add photos?",
-        answer: "Yes! You can upload photos through the gallery section. We welcome pictures from shared moments, celebrations, or any special occasions we've had together."
-      },
-      {
-        question: "When will the content be updated?",
-        answer: "We regularly update the website with new photos and memories. Special occasions and milestones are added as they happen, keeping our digital story fresh and current."
-      },
-      {
-        question: "Is this content private?",
-        answer: "While the website is accessible to our friends and family, certain sections are password-protected to keep our intimate moments private. You can adjust privacy settings for any content you share."
+        question:"Can you build one for me and my friend?",
+        answer:"ofc yes man, just mail the dev    anirbanghosh060@gmail.com"
       }
     ]
   
