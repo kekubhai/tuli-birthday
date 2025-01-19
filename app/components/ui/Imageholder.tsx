@@ -11,8 +11,9 @@ export default function RightImageHolder({ imageUrl, alt }: RightImageHolderProp
       <Image
         src={imageUrl}
         alt={alt}
-        layout="fill"
-        objectFit="cover"
+        width={900}
+        height={10}
+        objectFit="fit"
         className="transition-transform duration-500 ease-in-out hover:scale-105"
         priority
       />

@@ -62,23 +62,9 @@ export default function BirthdayLandingPage() {
         <section className="mb-16 text-center">
           <Cake3D />
           <ConfettiButton />
-          
-        </section>
-
-       
-
-        <section className="text-center animate-on-scroll">
-          <h2 className="text-4xl font-bold mb-8">Celebrate in Style</h2>
-          <p className="text-xl mb-8">Join us for an unforgettable birthday bash!</p>
-          <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full text-xl transition duration-300 ease-in-out transform hover:scale-105">
-            RSVP Now
-          </button>
+          <Reactbaloons/>
         </section>
       </main>
-
-      <footer className="py-6 px-4 text-center">
-        <p>&copy; {new Date().getFullYear()} | Birthday Celebration Extraordinaire</p>
-      </footer>
     </div>
   )
 }

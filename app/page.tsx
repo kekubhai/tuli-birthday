@@ -5,7 +5,6 @@ import Image from 'next/image'
 import React from 'react'
 import Navigation from './components/navigation'
 import { TextGenerateEffect } from './components/ui/text-generate-effect'
-import { Button } from '@/components/ui/button'
 import { SparklesCore } from './components/ui/Sparkles'
 import MemoryLane from './components/TimelineofUs'
 import SpecialMoments from './components/SpecialEffects'
@@ -18,6 +17,7 @@ import AboutPage from './components/AboutHer'
 import Gift from './components/Gift'
 import BirthdayLandingPage from './components/celebration'
 import MyLetter from './components/myLetter'
+import Developer from '@/components/devpage'
 
 const page = () => {
   const images = [
@@ -49,11 +49,7 @@ const page = () => {
               words="Celebrating our beautiful moments together. Join us in reliving the magic and sharing your wishes for her special day!"
               className="text-xl mb-8 max-w-xl"
             />
-            <Button
-              className="bg-[#003366] hover:bg-[#002244] text-white px-8 py-6 text-lg rounded-lg"
-            >
-              Explore Now
-            </Button>
+           
           </div>
         </div>
 
@@ -61,15 +57,15 @@ const page = () => {
         <div className="relative">
           <Image
             className="object-cover bg-center min-h-[400px] lg:min-h-full"
-            src='/store/nauka1.jpg'
+            src='/store/hero.jpg'
             width={1000}
             height={1000}
             alt='hello'
           />
       
           <div className="absolute inset-0 flex items-center justify-center">
-            <button  className="text-gray-700 text-4xl lg:text-6xl font-bold bg-yellow-300 rounded-md p-4">
-              Our Adventure
+            <button  className="text-gray-700  text-4xl lg:text-6xl font-bold bg-yellow-300 rounded-lg p-4">
+              Our Adventures
             </button>
           </div>
         </div>
@@ -122,7 +118,7 @@ const page = () => {
         </div>
         
         <div>
-        
+        <Developer/>
         </div>
       </div>
     </div>

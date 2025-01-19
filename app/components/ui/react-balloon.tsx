@@ -14,11 +14,7 @@ export default function Reactbaloons() {
 
   return (
     <div className="App">
-      <h1>Floating Balloons</h1>
-      
-      <p className="balloon-counter">
-        Balloons Burst: <strong>{burstCount}</strong>
-      </p>
+    
       <ReactFloatingBalloons
         count={10} // Total number of balloons
         msgText="Boom!!" // Message to show when popped
